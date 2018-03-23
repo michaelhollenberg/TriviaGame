@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+
+    <h2>Time left:<span id="timer">30</span></h2>
+    
+    
+
+    <p class="question">1.Which State has declared chili its official dish?</p>
+    <ul class="answers">
+        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Oklahoma</label><br/>
+        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">New York</label><br/>
+        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Kansas</label><br/>
+    </ul>
+
+    <p class="question">2.In Kentucky there are more of these than people</p>
+    <ul class="answers">
+        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">barrels of bourbon</label><br/>
+        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">pickup trucks</label><br/>
+        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">horses</label><br/>
+    </ul>
+    <script>
+            var timeRemaining = 30
+            setInterval(function(){ 
+
+                
+                if (timeRemaining === 0) {
+                    $("#timer").text("0")
+                } else {
+                    timeRemaining -=1;
+                    $("#timer").text(timeRemaining);
+                    console.log(timeRemaining);
+                }
+            }, 1000);
+
+            console.log("checkcheck")
+      
+    </script>
+    
+</body>
+</html>
