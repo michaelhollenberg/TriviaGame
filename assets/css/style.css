@@ -1,10 +1,11 @@
 body {
-    background: blue;
+    background: #49CEF9;
 }
 
 h1 {
     text-align: center; 
-    color: red;
+    color: #F2F91D;
+    font-size: 72px;
 }
 
 #button {
